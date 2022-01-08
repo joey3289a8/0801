@@ -1,5 +1,9 @@
 # Adtriba coding challenge
 
+## Screenshots
+
+![screenshot](/screenshot.png)
+
 ## Technologies used:
 
 - React with Next.js
@@ -8,8 +12,15 @@
 - Tailwind CSS
 - rechart (charting library for React)
 - Jest and React Testing Library
+- Git and Github for version control
 
 ## Installation
+
+### View online
+
+https://0801.vercel.app/
+
+### Run locally
 
 1. Download the project files or clone the git repo
 2. `cd` into the project directory
