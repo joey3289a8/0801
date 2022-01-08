@@ -21,6 +21,7 @@ const Channel = ({ name, calcTotal }: ChannelProps) => {
 		const USDRegex = /^(0|[1-9])(\d*)(\.\d{2})/;
 		if (!input.match(USDRegex)) {
 			setBudgetInputError(true);
+			calcTotal("0", name);
 		} else {
 			setBudgetInputError(false);
 			calcTotal(input, name);
