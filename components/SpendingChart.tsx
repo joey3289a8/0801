@@ -20,7 +20,7 @@ const SpendingChart = () => {
 	];
 
 	return (
-		<>
+		<div data-testid="spending-chart">
 			<LineChart width={600} height={300}>
 				<XAxis type="number" dataKey="fraction" height={60}>
 					<Label
@@ -62,7 +62,7 @@ const SpendingChart = () => {
 					name="social_Facebook"
 				/>
 			</LineChart>
-		</>
+		</div>
 	);
 };
 

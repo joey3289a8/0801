@@ -39,9 +39,10 @@ const Channel = ({ name, calcTotal }: ChannelProps) => {
 					onChange={handleInputChange}
 					value={budgetInput}
 					name={name}
+					data-testid={`${name}-budget`}
 				/>
 				{budgetInputError && (
-					<p className="text-red-500 text-xs italic">
+					<p className="text-red-500 text-xs italic" data-testid="format-error">
 						Format must be in USD (e.g. 100.00)
 					</p>
 				)}

@@ -30,7 +30,7 @@ const MediaPlan = () => {
 
 	return (
 		<>
-			<form className="w-full max-w-lg">
+			<form data-testid="media-plan" className="w-full max-w-lg">
 				<div className="flex flex-wrap -mx-3 mb-6">
 					<div className="w-full px-3">
 						<label
@@ -94,7 +94,7 @@ const MediaPlan = () => {
 						Total
 					</div>
 					<div className="uppercase tracking-wide text-gray-700 font-bold px-1 text-s">
-						USD {total}
+						<span>USD </span> <span data-testid="total-budget">{total}</span>
 					</div>
 				</div>
 				<div className="w-full mb-6 flex justify-end">
