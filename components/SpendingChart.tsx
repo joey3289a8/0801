@@ -8,7 +8,6 @@ import {
 	YAxis,
 	Label,
 } from "recharts";
-import CustomTooltip from "./CustomTooltip";
 import { data } from "../data/data.js";
 
 const SpendingChart = () => {
@@ -44,7 +43,7 @@ const SpendingChart = () => {
 					</Label>
 				</YAxis>
 				<CartesianGrid strokeDasharray="3 3" />
-				<Tooltip content={<CustomTooltip />} />
+				<Tooltip />
 				<Legend verticalAlign="top" height={40} />
 				<Line
 					data={chartData}
