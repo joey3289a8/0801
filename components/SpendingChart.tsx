@@ -57,8 +57,8 @@ const SpendingChart = () => {
 					dataKey="amount"
 					stroke="rgb(2 132 199)"
 					strokeWidth={3}
-					dot={{ strokeWidth: 3 }}
-					activeDot={{ strokeWidth: 3 }}
+					dot={false}
+					activeDot={{ stroke: "rgb(7 89 133)", strokeWidth: 2, r: 8 }}
 					name="social_Facebook"
 				/>
 			</LineChart>

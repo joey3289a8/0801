@@ -24,8 +24,10 @@ https://0801.vercel.app/
 
 1. Download the project files or clone the git repo
 2. `cd` into the project directory
-3. run `npm run dev`
-4. View the project at http://localhost:3000/
+3. run `npm install`
+4. run `npm run build`
+5. run `npm run start`
+6. View the project at http://localhost:3000/
 
 ## Running tests
 
