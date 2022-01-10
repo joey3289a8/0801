@@ -8,16 +8,11 @@ import {
 	YAxis,
 	Label,
 } from "recharts";
+import CustomTooltip from "./CustomTooltip";
+import { data } from "../data/data.js";
 
 const SpendingChart = () => {
-	const data = [
-		{ amount: 0, fraction: 0 },
-		{ amount: 200, fraction: 0.2 },
-		{ amount: 400, fraction: 0.5 },
-		{ amount: 600, fraction: 1 },
-		{ amount: 700, fraction: 1.5 },
-		{ amount: 800, fraction: 2 },
-	];
+	const chartData = data;
 
 	return (
 		<div data-testid="spending-chart">
@@ -49,10 +44,10 @@ const SpendingChart = () => {
 					</Label>
 				</YAxis>
 				<CartesianGrid strokeDasharray="3 3" />
-				<Tooltip />
+				<Tooltip content={<CustomTooltip />} />
 				<Legend verticalAlign="top" height={40} />
 				<Line
-					data={data}
+					data={chartData}
 					type="monotone"
 					dataKey="amount"
 					stroke="rgb(2 132 199)"

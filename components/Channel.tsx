@@ -41,6 +41,7 @@ const Channel = ({ name, calcTotal }: ChannelProps) => {
 					value={budgetInput}
 					name={name}
 					data-testid={`${name}-budget`}
+					placeholder="100.00"
 				/>
 				{budgetInputError && (
 					<p className="text-red-500 text-xs italic" data-testid="format-error">
